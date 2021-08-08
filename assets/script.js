@@ -9,7 +9,7 @@ $("#currentDay").text(currentDate);
 var table = $(".table");
 var tbodyEL = $(".tbody")
 //creating elements for the table
-var tableRow = $("tr");
+
  var tableHeaderTimes = $("th");
 var tableData = $("td")
 // creating the headings
@@ -37,6 +37,13 @@ console.log(currentHour);
 // If/Else Statement - conditions for the hours
 
 function LocalStorageSetUp() {
+      
+       var storedData = localStorage.getItem("storingData");
+
+       var tableRow = $("<tr>");
+       var tableData = $("<td>").append(storedData);
+       tableRow.append(tableData);
+       tbodyEL.append(tableRow);
 
  
 };
