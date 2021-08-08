@@ -35,3 +35,8 @@ var currentHour = date.getHours(); // Return index 0 through 23
 console.log(currentHour);
 
 // If/Else Statement - conditions for the hours
+
+function LocalStorageSetUp() {
+
+ 
+};
