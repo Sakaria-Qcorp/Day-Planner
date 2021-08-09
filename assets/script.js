@@ -114,6 +114,13 @@ if (hourNow > 2) {
     let textBx = $("#eight");
     textBx.addClass("past");
 }
+$(".button").on("click", function () {
+    
+
+    // Save what was entered into the textbox in local storage
+    var storingData = $(this).siblings(".textbox").val();
+    localStorage.setItem("storingData", storingData);
+});
 
 function LocalStorageSetUp() {
       
