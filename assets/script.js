@@ -18,17 +18,7 @@ var headingN = $("h2");
 
 
 
-//headingT.text("Times");
-//headingN.text("Notes");
-//appending the headings
 
-//tableHeaderTimes.append(headingT);
-//append(headingN);
-//tableHeaderRow.append(tableHeaderTimes);
-//tableHeaderRow.append(tableHeaderNotes);
-//.append(tableHeaderRow);
-
-// create a funtion showing the table of numbers
 
        
 
@@ -38,13 +28,90 @@ var headingN = $("h2");
 // If/Else Statement - conditions for the hours
 if (hourNow > 7) {
     // All textboxes will be green
-    var textBx = $("#first");
+    let textBx = $("#first");
     textBx.addClass("future");
 }else if (hourNow == 7){
-    var textBx = $("#first");
+    let textBx = $("#first");
     textBx.addClass("present");
 }else{
     var textBx = $("#first");
+    textBx.addClass("past");
+}
+if (hourNow > 8) {
+    // All textboxes will be green
+    let textBx = $("#second");
+    textBx.addClass("future");
+}else if (hourNow == 8){
+    let textBx = $("#second");
+    textBx.addClass("present");
+}else{
+    let textBx = $("#second");
+    textBx.addClass("past");
+}
+if (hourNow > 9) {
+    // All textboxes will be green
+    let textBx = $("#third");
+    textBx.addClass("future");
+}else if (hourNow == 9){
+    let textBx = $("#third");
+    textBx.addClass("present");
+}else{
+    let textBx = $("third");
+    textBx.addClass("past");
+}
+if (hourNow > 10) {
+    // All textboxes will be green
+    let textBx = $("#fourth");
+    textBx.addClass("future");
+}else if (hourNow == 10){
+    let textBx = $("#fourth");
+    textBx.addClass("present");
+}else{
+    let textBx = $("#fourth");
+    textBx.addClass("past");
+}
+if (hourNow > 11) {
+    // All textboxes will be green
+    let textBx = $("#fith");
+    textBx.addClass("future");
+}else if (hourNow == 11){
+    let textBx = $("#fith");
+    textBx.addClass("present");
+}else{
+    let textBx = $("#fith");
+    textBx.addClass("past");
+}
+if (hourNow > 12) {
+    // All textboxes will be green
+    let textBx = $("#sixth");
+    textBx.addClass("future");
+}else if (hourNow == 12){
+    let textBx = $("#sixth");
+    textBx.addClass("present");
+}else{
+    let textBx = $("#xixth");
+    textBx.addClass("past");
+}
+if (hourNow > 1) {
+    // All textboxes will be green
+    let textBx = $("#seventh");
+    textBx.addClass("future");
+}else if (hourNow == 1){
+    let textBx = $("#seventh");
+    textBx.addClass("present");
+}else{
+    let textBx = $("#seventh");
+    textBx.addClass("past");
+}
+if (hourNow > 2) {
+    // All textboxes will be green
+    let textBx = $("#eight");
+    textBx.addClass("future");
+}else if (hourNow == 2){
+    let textBx = $("#eight");
+    textBx.addClass("present");
+}else{
+    let textBx = $("#eight");
     textBx.addClass("past");
 }
 
